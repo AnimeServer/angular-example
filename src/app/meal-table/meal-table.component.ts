@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-meal-table',
@@ -11,7 +12,7 @@ export class MealTableComponent implements OnInit {
 
   value = "I'm a filter";
 
-  constructor() { }
+  constructor(public service: AppService) { }
 
   ngOnInit(): void {
   }
